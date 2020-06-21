@@ -71,34 +71,6 @@ public class login extends AppCompatActivity {
                    editor.commit();
                 }
 
-
-
-
-                //1st method
-//                String txtUser= txtUsername.getText().toString();
-//                String txtPass=txtpassword.getText().toString();
-//                SharedPreferences sharedPreferences=getSharedPreferences("Login",MODE_PRIVATE);
-//               SharedPreferences.Editor editor=sharedPreferences.edit();
-//                String data="username="+txtUser+"&userpass="+txtPass;
-//                Data d= new Data(getApplicationContext());
-//                String ret=d.select("login.php",data);
-//                try {
-//                    JSONObject jsonObject=new JSONObject(ret);
-////                    String uname=jsonObject.getString("username");
-////                    String pass=jsonObject.getString("password");
-//                    int code=jsonObject.getInt("code");
-//                    if(code==1)
-//                    {
-//                        Toast.makeText(getApplicationContext(),"welcome",Toast.LENGTH_LONG).show();
-//                    }
-//                    else {
-//                        Toast.makeText(getApplicationContext(),"Wrong username or password",Toast.LENGTH_LONG).show();
-//                    }
-////                    editor.putString("username",uname);
-////                    editor.putString("password",pass);
-////                    editor.putBoolean("Status",true);
-////                    editor.commit();
-//                }
                 catch (Exception e)
                 {
                     Log.d("Error",e.toString());
@@ -120,7 +92,6 @@ public class login extends AppCompatActivity {
         txtUsername=(EditText)findViewById(R.id.editText2);
         txtpassword=(EditText)findViewById(R.id.editText7);
         btnLogin=(Button)findViewById(R.id.button2);
-        //btnregister=(Button)findViewById(R.id.button3);
         signUp=(TextView)findViewById(R.id.textView);
     }
 }
